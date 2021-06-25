@@ -45,15 +45,15 @@
 		<div class="container">
 			<div class="row" >
 				<div class="col-lg-6 d-flex flex-column justify-content-center pt-5">
-					<p class="font-weight-bolder display-4">Want to take your business online?</p>
+					<p class="font-weight-bolder display-4">Want to take your business online?</p>	
 					<p class="lead">Voila!! We at Skyosys love working with growing businesses that are modern, adaptive and think outside the box.</p>
 					<div>
 						<button type="button" class="btn btn-success">Get Started
 						</button>
 					</div>
 				</div>
-				<div class="col-lg-6 p-5">
-					<img src="img1.svg" class="img-fluid">
+				<div class="col-lg-6">
+					<img src="img1.svg" class="img-fluid" id="home_img">
 				</div>
 			</div>
 		</div>
@@ -66,8 +66,8 @@
 			</header>
 
 				<div class="row">
-					<div class="col-lg-6 d-flex align-items-center p-5">
-						<img src="avtar.jpg" class="img-fluid">
+					<div class="col-lg-6">
+						<img src="avtar.jpg" class="img-fluid" id="avtar_img">
 					</div>
 
 					<div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -92,12 +92,12 @@
 
 	<section class="services p-5" id="services">
 		<div class="container">
-			<header class="text-center p-4 mb-5">
+			<header class="mt-5 mb-5">
 				<h1 id="aboutus_header">SERVICES</h1>
 			</header>
 
 			<div class="d-flex justify-content-around"> 
-				<div class="row" id="services_row">
+				<div class="row">
 					<div class="col-lg-4 pb-4">
 						<div class="card mx-3">
 							<div class="card-body pb-5">
@@ -143,33 +143,31 @@
 
 		<div id="contact" class="contact p-3">
 			<div class="container">
-				<header class="text-center mt-5">
+				<header class="mt-5">
 					<h1 id="aboutus_header">CONTACT US</h1>
 				</header>
 			<h4 class="text-center m-4" id="droptxt">Drop  Us a Message</h4>
 				<form>
 					<div class="row">
-						<div class="d-flex justify-content-end w-50">
-							<div class="col-xs-6 col-lg-6 col-md-6 p-4">
-								<div class="form-group">
+						<div class="d-flex">
+							<div class="col-md-6 p-4">
+								<div class="form-group input-group-lg">
 									<input type="text" name="username" id="username" class="form-control " placeholder="Your Name*">
 								</div>
-								<div class="form-group">							
+								<div class="form-group input-group-lg">							
 									<input type="email" name="emailid" id="emailid" class="form-control " placeholder="Your Email*">
 								</div>
-								<div class="form-group">
+								<div class="form-group input-group-lg">
 									<input type="number" name="phone" id="phone" class="form-control" placeholder="Your Phone Number*">
 								</div>
-								<div class="form-group">
+								<div class="form-group input-group-lg">
 									<button type="button" class="btn btn-success btn-lg shadow" onclick="DisplayData()">Send Message</button>
 								</div>					
 							</div>
-						</div>
-						<div class="w-50">
-							<div class="col-xs-6 col-lg-6 col-md-6 p-4">
-								<div class="form-group">
-									<textarea name="txtMsg" id="txtMsg" 
-									class="form-control" rows="6" placeholder="Your Message*"></textarea>
+
+							<div class=" col-md-6 p-4">
+								<div class="form-group input-group-lg">
+									<textarea name="txtMsg" id="txtMsg" class="form-control" rows="5"placeholder="Your Message*"></textarea>
 								</div>
 							</div>
 						</div>
@@ -178,61 +176,65 @@
 			</div>
 
 
-			<footer>
-				<div class="text-white bg-dark p-5">
-					<div class="container-fluid p-4">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-xl-3 mx-auto">
-								<h4 class="skyosys">Skyosys</h4>
-								<p>Abhudaya Bank,<br>Airoli,<br>Sector-17.</p>
-							</div>
-							<hr class="w-100 clearfix d-md-none" />
-							<div class="col-md-3 col-lg-3 col-xl-3">
-								<h5>Useful Links</h5>
-									<p><a href="#home" class="text-white useful_link">Home</a>
-									</p>
-									<p><a href="#about" class="text-white useful_link">About</a>
-									</p>
-									<p><a href="#services" class="text-white useful_link">Services</a></p>
-									<p><a href="#contact" class="text-white useful_link">Contact
-									</a></p>
-							</div>
-							<hr class="w-100 clearfix d-md-none" />
-							<div class="col-md-3 col-lg-3 col-xl-3">
-								<h5>Services</h5>
-									<p><a href="#" class="text-white useful_link">Web Development</a></p>
-									<p><a href="#" class="text-white useful_link">Mobile App<br>Development</a></p>
-									<p><a href="#" class="text-white useful_link">Graphic Designing</a></p>
-							</div>
-							<hr class="w-100 clearfix d-md-none" />
-							<div class="col-md-3 col-lg-3 col-xl-3">
-								<h5>Contact Us</h5>
-									<p class="text-white">
-									Email: info@skyosys.com</p>
-									<p class="text-white">
-									Contact: 998756874</p>
-							</div>
+		<div style="margin: -16px;">
+			<footer class="text-white mt-4" style="background-color: #141414;">
+				<div class="p-5">
+					<div class="row">
+						<div class="col-md-3">
+							<h4 class="skyosys">Skyosys</h4>
+							<p>Abhudaya Bank,<br>Airoli,<br>Sector-17.</p>
+						</div>
+
+						<hr class="w-100 clearfix d-md-none" />
+						<div class="col-md-3">
+							<h5>Useful Links</h5>
+							<p><a href="#home" class="text-white text-decoration-none">Home</a>
+							</p>
+							<p><a href="#about" class="text-white text-decoration-none">About</a>
+							</p>
+							<p><a href="#services" class="text-white text-decoration-none">Services</a></p>
+							<p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
+						</div>
+
+						<hr class="w-100 clearfix d-md-none" />
+						<div class="col-md-3">
+							<h5>Services</h5>
+							<p><a href="#" class="text-white text-decoration-none">Web Development</a></p>
+							<p><a href="#" class="text-white text-decoration-none">Mobile App<br>Development</a></p>
+							<p><a href="#" class="text-white text-decoration-none">Graphic Designing</a></p>
+						</div>
+						
+						<hr class="w-100 clearfix d-md-none" />
+						<div class="col-md-3">
+							<h5>Contact Us</h5>
+							<p class="text-white">Email: info@skyosys.com</p>
+							<p class="text-white">Contact: 998756874</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="p-3">
-					<div class="row d-flex align-items-center">
-						<div class="col-md-7 col-lg-8 text-md-start">
-							<p class="pl-4">© CopyRight Skyosys. All Rights Reserved.
-							</p>
+				<hr style="color: white; height: 2px;">
+
+				<div class="pt-2">
+					<div class="d-flex">
+						<div class="col-xs-7">
+							<p class="ml-5">© CopyRight Skyosys. All Rights Reserved.</p>
 						</div>
-						<div class="col-md-5 col-lg-4 ml-lg-0 text-center pl-5">
-							<a href=" "class="h2 m-2"><span class="fa fa-whatsapp">
-							</span></a>
-							<a href=""class="h2 m-2"><span class="fa fa-facebook">
-							</span></a>
-							<a href=""class="h2 m-2"><span class="fa fa-twitter">
-							</span></a>
+						<div class="col-xs-5 ms-auto mb-3 mr-5">
+							<a href="#" class="h2 m-2"><span class="fa fa-whatsapp"
+									style="font-size: 2rem; color: lightgreen;">
+								</span></a>
+							<a href="#" class="h2 m-2"><span class="fa fa-facebook"
+									style="font-size: 2rem; color: #4267B2;">
+								</span></a>
+							<a href="#" class="h2 m-2"><span class="fa fa-twitter"
+									style="font-size: 2rem; color: #1DA1F2;">
+								</span></a>
 						</div>
 					</div>
 				</div>
 			</footer>
+		</div>
 
 </body>
 </html>
